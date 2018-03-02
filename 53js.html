@@ -1,0 +1,24 @@
+Enter message:<input type="text" id="t1">
+<input type="button" value="check" onclick="show()">
+<script>
+function show(){
+var x=document.getElementById("t1").value;
+var m=["","ABC","DEF","GHI","JKL","MNO","PQR","STU","VWX","YZ"];
+var i,n,j,count=0;
+for(i=0;i<x.length;i++){
+count=0;
+n=x.charAt(i);
+for(j=i;1;j++){
+if(n==x.charAt(j)){
+count++;}
+else if(x.charAt(j)=='#'){
+document.write(m[n].charAt(count-1));
+count=0;}
+else{
+break;}
+}
+document.write(m[n].charAt(count-1));
+i=j-1;
+}
+}
+</script>

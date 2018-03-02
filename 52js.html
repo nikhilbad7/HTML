@@ -1,0 +1,97 @@
+Enter message:<input type="text" id="t1">
+<input type="button" value="check" onclick="show()">
+
+<script>
+function show(){
+var x=document.getElementById(t1).value;
+var a="A,B,C";
+var b="D,E,F";
+var c="G,H,I";
+var d="J,K,L";
+var e="M,N,O";
+var f="P,Q,R";
+var g="S,T,U";
+var h="V,W,X";
+var i="Y,Z";
+var u,w;
+w="";
+var s1=a.split(",");
+var s2=b.split(",");
+var s3=c.split(",");
+var s4=d.split(",");
+var s5=e.split(",");
+var s6=f.split(",");
+var s7=g.split(",");
+var s8=h.split(",");
+var s9=i.split(",");
+for(u=0;u<x.length+1;i++){
+if(x[u]==1){
+if(x[u]!=x[u+1]){
+w=w+s1[u];}
+else if(x[u]==x[u+1]&&x[u+1]==x[u+2]){
+w=w+s1[u+2];}
+else if(x[u]==x[u+1]){
+w=w+s1[u+1];}
+}
+if(x[u]==2){
+if(x[u]!=x[u+1]){
+w=w+s2[u];}
+else if(x[u]==x[u+1]&&x[u+1]==x[u+2]){
+w=w+s2[u+2];}
+else if(x[u]==x[u+1]){
+w=w+s2[u+1];}}
+if(x[u]==3){
+if(x[u]!=x[u+1]){
+w=w+s3[u];}
+else if(x[u]==x[u+1]&&x[u+1]==x[u+2]){
+w=w+s3[u+2];}
+else if(x[u]==x[u+1]){
+w=w+s3[u+1];}}
+if(x[u]==4){
+if(x[u]!=x[u+1]){
+w=w+s4[u];}
+else if(x[u]==x[u+1]&&x[u+1]==x[u+2]){
+w=w+s4[u+2];}
+else if(x[u]==x[u+1]){
+w=w+s4[u+1];}}
+if(x[u]==5){
+if(x[u]!=x[u+1]){
+w=w+s5[u];}
+else if(x[u]==x[u+1]&&x[u+1]==x[u+2]){
+w=w+s5[u+2];}
+else if(x[u]==x[u+1]){
+w=w+s5[u+1];}}
+if(x[u]==6){
+if(x[u]!=x[u+1]){
+w=w+s6[u];}
+else if(x[u]==x[u+1]&&x[u+1]==x[u+2]){
+w=w+s6[u+2];}
+else if(x[u]==x[u+1]){
+w=w+s6[u+1];}}
+if(x[u]==7){
+if(x[u]!=x[u+1]){
+w=w+s7[u];}
+else if(x[u]==x[u+1]&&x[u+1]==x[u+2]){
+w=w+s7[u+2];}
+else if(x[u]==x[u+1]){
+w=w+s7[u+1];}}
+if(x[u]==8){
+if(x[u]!=x[u+1]){
+w=w+s8[u];}
+else if(x[u]==x[u+1]&&x[u+1]==x[u+2]){
+w=w+s8[u+2];}
+else if(x[u]==x[u+1]){
+w=w+s8[u+1];}}
+if(x[u]==9){
+if(x[u]!=x[u+1]){
+w=w+s9[u];}
+else if(x[u]==x[u+1]&&x[u+1]==x[u+2]){
+w=w+s9[u+2];}
+else if(x[u]==x[u+1]){
+w=w+s9[u+1];}}
+else if(x[u]=='#'){
+}
+}
+document.write(w);
+}
+</script>
