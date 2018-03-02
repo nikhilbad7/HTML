@@ -1,0 +1,88 @@
+<html>
+<body>
+<style>
+#main{
+width:100%;
+height:1000px;}
+#header{
+height:200px;
+width:100%;
+background-color:black;
+position:absolute;
+top:0px;
+left:0px;
+}
+#footer{
+height:800px;
+width:100%;
+position:absolute;
+top:200px;
+background-color:gray;}
+#f1{
+position:absolute;
+top:130px;
+left:500px;}
+#x{
+position:absolute;
+top:150px;
+left:100px;}
+#y{
+position:absolute;
+top:175px;
+left:100px;}
+#z{
+position:absolute;
+top:200px;
+left:100px;}
+#x1{
+font-size:20px;
+color:#fff;}
+#y1{
+font-size:20px;
+color:#fff;}
+#z1{
+font-size:20px;
+color:#fff;}
+#t{
+position:absolute;
+top:400px;
+left:400px;}
+</style>
+<div id="main">
+<div id="header"></div>
+<div id="footer">
+<div id="x"><a id="x1" href="49js.html">HOME</a></div>
+<div id="y"><a id="y1" href="50js.html">ABOUT</a></div>
+<div id="z"><a id="z1" href="51js.html">REGISTER</a></div>
+<table id="f1"><tr><td>AGE</td><td><input type="text" id="t1"></td></tr><tr><td>MOBILENO.</td><td><input type="text" id="t2"></td></tr><tr><td>NAME</td><td><input type="text" id="t3"></td></tr><tr><td>PASSWORD</td><td><input type="text" id="t4"></td></tr><tr><td colspan=2><input type="button" id="but" value="REGISTER" onclick="show()"></td></tr></table>
+</div></div>
+</body>
+</html>
+<script>
+function show(){
+var x=parseInt(document.getElementById("t1").value);
+var y=document.getElementById("t2").value;
+var z=document.getElementById("t3").value;
+var w=document.getElementById("t4").value;
+
+if(x>=12&&x<=90){
+alert("age is"+x);}
+else if(x<12&&x>90){
+alert("please enter age between 12 and 90");}
+if(isNaN(y)){
+alert("please enter a numeric value");}
+else if(y.length!=10){
+alert("please enter a 10 digit number");
+}
+else if(!isNaN(y)){
+alert(y);}
+if(isNaN(z)){
+alert(z);}
+else if(!isNaN(z)){
+alert("please dont enter a numeric value");}
+if(w.length<8){
+alert("password must be 8 character long");}
+else if(w.length>=8){
+alert("your password is"+w);}
+}
+</script>
